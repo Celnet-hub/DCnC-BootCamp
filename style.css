@@ -1,0 +1,9 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+.page-height {
+    min-height: 100vh;
+}

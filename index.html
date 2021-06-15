@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>DCnC BootCamp</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-expand bg-dark navbar-dark py-3 fixed-top">
+			<div class="container">
+				<a href="#hero" class="navbar-brand">DCnC BootCamp</a>
+				
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="#learn" class="nav-link">Learn</a>
+						</li>
+						<li class="nav-item">
+							<a href="#questions" class="nav-link">Questions</a>
+						</li>
+						<li class="nav-item">
+							<a href="#founder" class="nav-link">Founder</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+
+		<section class="bg-dark text-light p-5 text-center text-sm-start page-height" id="hero">
+			<div class="container">
+				<div class="d-sm-flex align-items-center justify-content-between">
+					<!--changes the flex to break at a small px-->
+					<div>
+						<br />
+						<h1>
+							Become A <span class="text-warning">Software Engineer</span>
+						</h1>
+						<p class="lead my-4">
+							At <span class="text-warning">DCnC</span> Coding Boot Camp, our
+							web development program teaches you the key programming skills for
+							front end and back end web development, all while preparing you
+							for success in the professional world. Not only will you get
+							real-world project experience that’s immediately applicable to the
+							workforce, you’ll also earn a Certificate of Completion from
+							<span class="text-warning">DCnC</span> Extension to bolster your
+							resume and begin or advance your career as a web developer.
+						</p>
+						<button
+							class="btn btn-primary btn-md"
+							data-bs-toggle="modal"
+							data-bs-target="#enroll"
+						>
+							Get Started
+						</button>
+					</div>
+					<img
+						class="img-fluid w-50 d-none d-sm-block"
+						src="img/showcase.svg"
+						alt="img"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="enroll"
+			tabindex="-1"
+			aria-labelledby="enrollLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="enrollLabel">Enroll with us</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<p class="lead">Fill out the form below</p>
+						<form action="/error/404 error.html">
+							<div class="mb-3">
+								<label for="first-name" class="col-form-label">
+									First Name:
+								</label>
+								<input
+									type="text"
+									class="form-control"
+									id="first-name"
+									required
+								/>
+							</div>
+							<div class="mb-3">
+								<label for="last-name" class="col-form-label">
+									Last Name:
+								</label>
+								<input
+									type="text"
+									class="form-control"
+									id="last-name"
+									required
+								/>
+							</div>
+							<div class="mb-3">
+								<label for="phone" class="col-form-label"> Phone: </label>
+								<input type="number" class="form-control" id="phone" required />
+							</div>
+							<div class="mb-3">
+								<label for="email" class="col-form-label"> Email: </label>
+								<input type="text" class="form-control" id="email" required />
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Boxes -->
+		<section class="p-5">
+			<div class="container">
+				<div class="row text-center g-5">
+					<div class="col-md">
+						<div class="card bg-dark text-light">
+							<div class="card-body text-center">
+								<div class="h1 mb-3">
+									<i class="bi bi-laptop"></i>
+								</div>
+								<h3 class="card-title mb-3">Virtual</h3>
+								<p class="card-text">
+									Due to the recent Covid-19 breakout, collaboration is done
+									remotely twice a week.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card bg-secondary text-light">
+							<div class="card-body text-center">
+								<div class="h1 mb-3">
+									<i class="bi bi-person"></i>
+								</div>
+								<h3 class="card-title mb-3">Devops</h3>
+								<p class="card-text">
+									DevOps describes a culture and set of processes that bring
+									development and operations teams together to complete software
+									development. We give the best Devops training in the country.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card bg-dark text-light">
+							<div class="card-body text-center">
+								<div class="h1 mb-3">
+									<i class="bi bi-people"></i>
+								</div>
+								<h3 class="card-title mb-3">Group Project</h3>
+								<p class="card-text">
+									Projects are done in groups to encourage networking and
+									effective communication. Our industry-driven curriculum
+									teaches you the most in-demand web development skills through
+									real-world examples. Everything you learn is applicable to a
+									professional environment.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Learn Section -->
+
+		<section class="p-5" id="learn">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md">
+						<img src="img/fundamentals.svg" alt="img" class="img-fluid" />
+					</div>
+					<div class="col-md p-5">
+						<h2>Learn all you need</h2>
+						<div class="accordion accordion-flush" id="questions">
+							<!-- First item -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingOne">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseOne"
+										aria-expanded="true"
+										aria-controls="flush-collapseOne"
+										style="font-weight: 800"
+									>
+										Web Development
+									</button>
+								</h2>
+								<div
+									id="flush-collapseOne"
+									class="accordion-collapse collapse show"
+									aria-labelledby="flush-headingOne"
+									
+								>
+									<div class="accordion-body">
+										Learn all you need to become a Full-Stack Developer.
+										<li>HTML</li>
+										<li>CSS</li>
+										<li>JavaScript</li>
+										<li>React.js</li>
+										<li>Node.js</li>
+										<li>Express.js</li>
+										<li>MongoDB</li>
+									</div>
+								</div>
+							</div>
+
+							<!-- Fourth Item -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingFour">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseFour"
+										aria-expanded="false"
+										aria-controls="flush-collapseFour"
+										style="font-weight: 800"
+									>
+										DevOps
+									</button>
+								</h2>
+								<div
+									id="flush-collapseFour"
+									class="accordion-collapse collapse"
+									aria-labelledby="flush-headingFour"
+									data-bs-parent="#questions"
+								>
+									<div class="accordion-body">
+										DevOps describes a culture and set of processes that bring
+										development and operations teams together to complete
+										software development. It allows organizations to create and
+										improve products at a faster pace than they can with
+										traditional software development approaches.
+
+										Learn:
+										<li>Puppet</li>
+										<li>Ansible</li>
+										<li>Cloud fundamentals</li>
+										<li>Docker</li>
+										<li>Nagios</li>
+										<li>Jenkins</li>
+										<li>Git</li>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Learn React -->
+
+		<section class="p-5 bg-dark text-light" id="react">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md">
+						<img src="img/react.svg" alt="img" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Question Accordion -->
+
+		<section id="questions" class="p-5">
+			<div class="container">
+				<h2 class="text-center mb-4">Frequently Asked Questions</h2>
+				<div class="accordion accordion-flush" id="questions">
+					<!-- First item -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+								style="font-weight: 800"
+							>
+								What are Coding BootCamps?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#questions"
+						>
+							<div class="accordion-body">
+								There are several advantages to joining a Coding Bootcamp. The
+								first and most obvious one is that you get to learn coding in a
+								short time for a fraction of the cost of a software
+								engineering/computer science degree. Coming to the more
+								practical benefits of a Bootcamp, joining the Bootcamp can
+								increase your chances of getting employed. This is because there
+								is a high demand for programmers today. The other advantages of
+								joining a Programming Bootcamp include having more flexibility
+								in building your career, several opportunities to leave your
+								footprint in the tech industry, and the ability to launch your
+								own tech- startup.
+							</div>
+						</div>
+					</div>
+					<!-- Second item -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwo"
+								style="font-weight: 800"
+							>
+								How much can I make after the Bootcamp?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingTwo"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								You can expect to earn a decent income after you complete the
+								Programming Bootcamp. The average amount that people who have
+								learned coding from a Bootcamp are earning over $80,000 a year.
+								So, you can expect to earn at least this amount after you
+								graduate from any one of the best Coding Bootcamps available
+								today.
+							</div>
+						</div>
+					</div>
+					<!-- Third Item -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree"
+								style="font-weight: 800"
+							>
+								Must I reside in Lagos to attend the BootCamp
+							</button>
+						</h2>
+						<div
+							id="flush-collapseThree"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingThree"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								This Bootcamp is opened to everyone in Nigeria.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Founder -->
+		<section id="founder" class="p-5 bg-primary">
+			<div class="container">
+				<h2 class="text-center text-white pb-5">Meet The Founder</h2>
+				<div class="row g-2">
+					<div class="col-md-6 col-lg-9 container-md">
+						<div class="card bg-light">
+							<div class="card-body text-center">
+								<img
+									src="img\FB profile pic.jpg"
+									alt=""
+									class="rounded-circle mb-3 w-50"
+								/>
+								<h3 class="card-title mb-3 fw-bold">Chidubem C Nwabuisi</h3>
+								<p class="lead text-center mb-5">
+									A Network Engineer who is interested in Software development.
+									He is a visionary and currently working towards achieving his
+									dreams.
+								</p>
+								<a href="https://github.com/Celnet-hub#" class="bi bi-github mx-1 h1" target="_blank"></a>
+								<a href="https://www.linkedin.com/in/celestine12345/" class="bi bi-linkedin mx-1 h1" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="p-5 bg-dark text-white text-center position-relative">
+			<div class="container">
+				<p class="lead">
+					Copyright &copy;
+					<script type="text/JavaScript">
+						document.write(new Date().getFullYear());
+					</script>
+					DCN
+				</p>
+				<a href="#" class="position-absolute bottom-0 end-0 p-5">
+					<i class="bi bi-arrow-up-circle h1"></i>
+				</a>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
